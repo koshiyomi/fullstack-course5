@@ -8,13 +8,13 @@
     <title>Filters</title>
   </head>
   <body>
-    <h1>Filters</h1>
+    <h1>过滤器</h1>
     <div ng-controller='MsgController'>
       {{name}} has a message for you: <br>
       {{sayMessage()}}
       <div>
         <button ng-click="feedYaakov()">Feed Yaakov</button>
-        Cost: {{ cookieCost | currency : "#blah" : 4 }}
+        Cost: {{ cookieCost | currency : "¥" : 4 }}
         <br>
 
         <img ng-src="images/yaakov_{{stateOfBeing}}.png">
