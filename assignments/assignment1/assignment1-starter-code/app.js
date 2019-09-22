@@ -23,12 +23,8 @@
                     if (arrayLunchList[i].length === 0 ||
                         arrayLunchList[i].split(" ").length === 0){
                         arrayLunchList.splice(i);
-                    }else{
-                        console.log(typeof arrayLunchList[i])
                     }
                 }
-                console.log($scope.lunchList.split(","));
-                console.log(arrayLunchList);
 
                 if (arrayLunchList.length <= 3) {
                     $scope.isTooMuch = "Enjoy!";
@@ -38,7 +34,6 @@
                 $scope.tooMuchIndicator = { "border-style" : "solid",
                                             "border-color" : "green",
                                             "color" : "green"};
-
             }
         };
     }
