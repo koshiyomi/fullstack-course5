@@ -16,7 +16,9 @@
         $scope.checkLunch = function () {
             if ($scope.lunchList.length === 0) {
                 $scope.isTooMuch = "Please enter data first";
-                $scope.tooMuchIndicator = {color: 'red'};
+                $scope.tooMuchIndicator = { "border-style" : "solid",
+                                            "border-color" : "red",
+                                            "color" : "red"};
             } else {
                 let arrayLunchList = $scope.lunchList.split(",");
                 for (let i = 0; i < arrayLunchList.length; i ++){
